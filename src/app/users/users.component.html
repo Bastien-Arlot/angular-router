@@ -1,6 +1,11 @@
 <h1 class="m-10">USERS</h1>
 <ul class="m-10 list-primary">
-  <li [routerLink]="[user.id, user.name]" *ngFor="let user of users">
+  <li
+    [routerLink]="[user.id, user.name]"
+    [queryParams]="{ name: user.name }"
+    fragment="foo"
+    *ngFor="let user of users"
+  >
     {{ user.name }}
   </li>
 </ul>
