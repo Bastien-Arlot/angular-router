@@ -26,6 +26,7 @@ export class UsersComponent implements OnInit {
       queryParams: {
         name: user.name,
       },
+      queryParamsHandling: 'merge',
     });
   }
 }
