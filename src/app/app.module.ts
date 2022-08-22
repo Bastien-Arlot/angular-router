@@ -11,7 +11,7 @@ import { UserComponent } from './user/user.component';
 const APP_ROUTES: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'users', component: UsersComponent },
-  { path: 'users/:id/:name', component: UserComponent },
+  { path: 'users/:id', component: UserComponent },
 ];
 
 @NgModule({
